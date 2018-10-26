@@ -7,7 +7,7 @@ from urllib.parse import urlparse
 class Helpers:
     @staticmethod
     def partname_or_filename(fp, url):
-        return os.path.basename(urlparse(url).path) or '{}.html'.format(os.path.splitext(fp.name)[0])
+        return os.path.basename(urlparse(url).path) or '{}.html'.format(os.path.basename(os.path.splitext(fp.name)[0]))
 
 
 class Extractor:
@@ -15,7 +15,7 @@ class Extractor:
         self.fp = fp
         self.output_dir = output_dir
         self.verbose = verbose
-        self.fdir = '{}.html_files'.format(os.path.splitext(self.fp.name)[0])
+        self.fdir = '{}.html_files'.format(os.path.basename(os.path.splitext(self.fp.name)[0]))
 
     @classmethod
     def extract_files(cls, files, output_dir, verbose=False):
