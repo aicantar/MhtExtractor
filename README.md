@@ -1,12 +1,9 @@
 # unmht
-**unmht** is a simple [MHTML][mhtml] extractor. It extracts `mht` files
-into a browser's `Save As...`-like folder structure (i.e. for 
-`google.mht` it will create `google.html` for the index file and put
-the resources into `google.html_files` directory).
+**unmht** is a simple [MHTML][mhtml] extractor.
 
-It uses Python's standard `email` module to facilitate message parsing
-so, technically, it can be used to extract any multipart message, but it
-was tested only with MHTML files.
+It uses Python's `email` module to facilitate message parsing, so technically it
+can be used to extract any multipart messages, although it was tested to work
+only with MHTML.
 
 [mhtml]: https://en.wikipedia.org/wiki/MHTML
 
@@ -26,7 +23,4 @@ optional arguments:
 ```
 
 # TODO
-* Rewrite resource paths in the resulting HTML to their new locations
-* Add setup script
-* Switch from compat32 policy for the email message parsing
-* Set `atime` and `mtime` from the `Date` header(?)
+* Change resource paths in resulting HTMLs to their new locations
