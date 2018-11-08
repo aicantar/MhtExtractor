@@ -65,8 +65,8 @@ class Extractor:
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        prog='unmht',
-        description='mht extractor; info: https://github.com/aicantar/unmht'
+        prog='mht_extractor',
+        description='info: https://github.com/aicantar/MhtExtractor'
     )
 
     parser.add_argument(
