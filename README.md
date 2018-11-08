@@ -9,9 +9,9 @@ it was tested only with MHTML.
 
 # Usage
 ```
-usage: unmht [-h] [-o OUTPUT_DIR] [-v] FILE [FILE ...]
+usage: mht_extractor [-h] [-o OUTPUT_DIR] [-v] FILE [FILE ...]
 
-mht extractor; info: https://github.com/aicantar/unmht
+info: https://github.com/aicantar/MhtExtractor
 
 positional arguments:
   FILE           files to extract
